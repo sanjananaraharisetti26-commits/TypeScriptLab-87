@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Sign In</title>
+</head>
+<body>
+    <h1>Library Member Login</h1>
+    <% if (error) { %>
+        <p style="color:red;"><%= error %></p>
+    <% } %>
+    <form action="/signin" method="POST">
+        <label>Member Name:</label>
+        <input type="text" name="member" placeholder="reader">
+        <br><br>
+        <label>PIN:</label>
+        <input type="password" name="pin" placeholder="456">
+        <br><br>
+        <button type="submit">Sign In</button>
+    </form>
+</body>
+</html>
